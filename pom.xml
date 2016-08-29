@@ -10,12 +10,11 @@
   <name>AlarmClock</name>
   <url>http://maven.apache.org</url>
   <properties>
-    <jdk.version>1.7</jdk.version>
-    <spring.version>4.1.1.RELEASE</spring.version>
+    <jdk.version>1.8</jdk.version>
+    <spring.version>4.3.2.RELEASE</spring.version>
     <jstl.version>1.2</jstl.version>
-    <junit.version>4.11</junit.version>
-    <logback.version>1.0.13</logback.version>
-    <jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+    <junit.version>4.12</junit.version>
+    <logback.version>1.1.7</logback.version>
   </properties>
 
   <dependencies>
@@ -40,11 +39,11 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-      <version>${jcl-over-slf4j.version}</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>jcl-over-slf4j</artifactId>-->
+      <!--<version>${jcl-over-slf4j.version}</version>-->
+    <!--</dependency>-->
 
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -70,6 +69,15 @@
       <artifactId>jstl</artifactId>
       <version>${jstl.version}</version>
     </dependency>
+
+
+      <!--selenide -->
+      <dependency>
+          <groupId>com.codeborne</groupId>
+          <artifactId>selenide</artifactId>
+          <version>3.9.1</version>
+      </dependency>
+
 
   </dependencies>
 
@@ -98,8 +106,6 @@
           <path>/Alarm</path>
         </configuration>
       </plugin>
-
     </plugins>
-
   </build>
 </project>
